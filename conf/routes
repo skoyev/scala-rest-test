@@ -7,6 +7,6 @@ GET     /                           controllers.Application.index
 
 GET     /api/users                 controllers.Users.all
 POST    /api/users                 controllers.Users.create
-GET     /api/users/:id             controllers.Users.show(id: String)
+GET     /api/users/:id             controllers.Users.loadByID(id: String)
 PUT     /api/users/:id             controllers.Users.update(id: String)
 DELETE  /api/users/:id             controllers.Users.delete(id: String)
